@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miguel Oliveira — Portfólio</title>
+    <meta
+      name="description"
+      content="Portfólio de Miguel Oliveira Kanuto Menezes — Desenvolvedor, estudante de Sistemas de Informação, modelador 3D."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+    <nav>
+      <a href="#hero" class="nav-logo">OK<span>.dev</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experiência</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#certifications">Certificações</a></li>
+        <li><a href="#models">Modelos 3D</a></li>
+        <li><a href="#publications">Publicações</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+    <div id="hero" style="position: relative; overflow: hidden">
+      <div class="hero-orb"></div>
+      <div class="hero-inner">
+        <p class="hero-greeting">// Olá, mundo! Bem-vindo ao meu portfólio</p>
+        <h1 class="hero-name">
+          <span class="first">Miguel</span><br />
+          <span class="last">Oliveira</span>
+        </h1>
+        <div class="hero-typewriter">
+          <span id="typewriter-text"></span><span class="cursor"></span>
+        </div>
+        <p class="hero-desc">
+          Estudante de Sistemas de Informação apaixonado por construir soluções
+          reais. Do frontend ao backend, passando por automação com IA e
+          modelagem 3D — estou sempre aprendendo e criando.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">Ver Projetos</a>
+          <a href="#contact" class="btn-secondary">Entre em Contato</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">scroll</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ══════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════ -->
+    <section id="about">
+      <p class="section-label reveal">Quem sou eu</p>
+      <h2 class="section-title reveal">Sobre <span>Mim</span></h2>
+      <div class="about-grid">
+        <div class="about-photo-placeholder reveal">
+          <img
+            src="assets/images/photo.png"
+            alt="Miguel Oliveira"
+            style="
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: var(--radius-lg);
+            "
+          />
+        </div>
+        <div class="about-content">
+          <p class="reveal">
+            Sou <strong>Miguel Oliveira Kanuto Menezes</strong>, estudante de
+            <strong>Sistemas de Informação</strong> na Unifacisa, em Campina
+            Grande — PB. Estou no início da minha jornada profissional, mas
+            construindo uma base sólida com muito estudo e projetos práticos.
+          </p>
+          <p class="reveal">
+            Meu foco está em <strong>desenvolvimento full-stack</strong>:
+            frontend com HTML, CSS, JavaScript e TypeScript; backend com
+            <strong>Java e Python</strong>; e banco de dados com
+            <strong>MySQL</strong>, aplicando conceitos de
+            <strong>POO</strong> para sistemas escaláveis.
+          </p>
+          <p class="reveal">
+            Também exploro áreas além do código: automatizo fluxos com
+            <strong>n8n</strong>, construo agentes de <strong>IA</strong>,
+            analiso dados com <strong>BI</strong> e crio modelos 3D no
+            <strong>Blender</strong>. Gosto de unir criatividade com tecnologia.
+          </p>
+          <p class="reveal">
+            Atualmente sou <strong>Jovem Aprendiz em TI</strong> na Unifacisa,
+            onde aplico na prática o que aprendo na teoria. Estou motivado a
+            crescer, aprender com desafios reais e contribuir com times e
+            projetos ambiciosos.
+          </p>
+          <div class="about-tags reveal">
+            <span class="tag">Campina Grande, PB</span>
+            <span class="tag">Sistemas de Informação</span>
+            <span class="tag">Jovem Aprendiz TI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ══════════════════════════════════════════
+       SKILLS — WORD CLOUD
+  ══════════════════════════════════════════ -->
+    <section id="skills">
+      <p class="section-label reveal">Tecnologias & Ferramentas</p>
+      <h2 class="section-title reveal">Minhas <span>Competências</span></h2>
+      <div class="word-cloud reveal">
+        <span class="skill-word xl">Python</span>
+        <span class="skill-word xl">JavaScript</span>
+        <span class="skill-word lg">Java</span>
+        <span class="skill-word lg">HTML5</span>
+        <span class="skill-word lg">CSS</span>
+        <span class="skill-word lg">n8n</span>
+        <span class="skill-word md">Agentes de IA</span>
+        <span class="skill-word md">Banco de Dados</span>
+        <span class="skill-word md">MySQL</span>
+        <span class="skill-word md">POO</span>
+        <span class="skill-word md">TypeScript</span>
+        <span class="skill-word sm">C++</span>
+        <span class="skill-word sm">BI</span>
+        <span class="skill-word sm">Responsividade</span>
+        <span class="skill-word sm">Backend</span>
+        <span class="skill-word sm">Frontend</span>
+        <span class="skill-word sm">Blender 3D</span>
+        <span class="skill-word xs">GitHub</span>
+        <span class="skill-word xs">Inglês</span>
+        <span class="skill-word xs">Linux</span>
+        <span class="skill-word xs">APIs REST</span>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ══════════════════════════════════════════
+       EXPERIENCE & EDUCATION
+  ══════════════════════════════════════════ -->
+    <section id="experience">
+      <p class="section-label reveal">Trajetória</p>
+      <h2 class="section-title reveal">
+        Experiência &amp; <span>Formação</span>
+      </h2>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <p class="timeline-date">Novembro 2025 — Presente · 4 meses</p>
+          <h3 class="timeline-role">Auxiliar Administrativo — TI</h3>
+          <p class="timeline-company">
+            Unifacisa Centro Universitário · Jovem Aprendiz
+          </p>
+          <p class="timeline-desc">
+            Atuo na área de Tecnologia da Informação da Unifacisa, oferecendo
+            suporte técnico e administrativo para o bom funcionamento dos
+            sistemas e infraestrutura tecnológica.
+          </p>
+          <ul class="timeline-bullets">
+            <li>
+              Apoio na manutenção e organização de equipamentos e recursos
+              tecnológicos
+            </li>
+            <li>Suporte técnico e atendimento interno</li>
+            <li>
+              Acompanhamento de atividades de infraestrutura de rede e sistemas
+            </li>
+            <li>
+              Auxílio em tarefas administrativas vinculadas ao setor de TI
+            </li>
+            <li>
+              Desenvolvimento de habilidades como comunicação, organização e
+              proatividade
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-icon">
+          <img
+            src="assets/images/Unifacisa.png"
+            alt="Unifacisa"
+            style="width: 48px; height: 48px; object-fit: contain"
+          />
+        </div>
+        <div class="edu-info">
+          <p class="edu-degree">Bacharelado em Sistemas de Informação</p>
+          <p class="edu-institution">
+            Unifacisa Centro Universitário · Campina Grande, PB
+          </p>
+          <p class="edu-period">Janeiro 2024 — Dezembro 2028</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ══════════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════════ -->
+    <section id="projects">
+      <p class="section-label reveal">GitHub</p>
+      <h2 class="section-title reveal">Meus <span>Projetos</span></h2>
+
+      <div class="projects-grid">
+        <!-- ── CIVI-FIX ── -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-logo">
+              <img src="assets/images/civifix-logo.png" alt="Civi-Fix Logo" />
+            </div>
+            <div class="project-meta">
+              <p class="project-name">Civi-Fix</p>
+              <p class="project-category">Civic Tech · Web App</p>
+            </div>
+            <div class="project-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-label">Projeto</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Plataforma que permite cidadãos registrarem problemas urbanos em sua
+            cidade e visualizarem no mapa as áreas mais afetadas, ajudando na
+            organização de denúncias e melhoria dos serviços públicos.
+          </p>
+          <div class="project-screenshots">
+            <div class="screenshots-track">
+              <img
+                src="assets/images/civifix-ss1.png"
+                alt="Civi-Fix tela inicial"
+              />
+              <img
+                src="assets/images/civifix-ss2.png"
+                alt="Civi-Fix formulário"
+              />
+              <img
+                src="assets/images/civifix-ss3.png"
+                alt="Civi-Fix mapa de calor"
+              />
+              <img src="assets/images/civifix-ss4.png" alt="Civi-Fix perfil" />
+            </div>
+            <button class="screenshot-nav prev">&#8249;</button>
+            <button class="screenshot-nav next">&#8250;</button>
+            <div class="screenshot-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="tech-badges">
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">Leaflet</span>
+            </div>
+            <a
+              href="https://github.com/miguelkanuto/Civi-fix-Projeto"
+              target="_blank"
+              class="project-link"
+            >
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- ── MEMORA ── -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div
+              class="project-logo"
+              style="
+                background: #2d3748;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: var(--font-display);
+                font-size: 1.6rem;
+                font-weight: 800;
+                color: #fff;
+                border-radius: 14px;
+              "
+            >
+              M
+            </div>
+            <div class="project-meta">
+              <p class="project-name">Memora</p>
+              <p class="project-category">Social · Memórias & Fotos</p>
+            </div>
+            <div class="project-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-label">Projeto</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Rede social inspirada no Google Fotos para registrar e compartilhar
+            memórias. Possui feed de memórias, linha do tempo, upload de
+            fotos/vídeos, perfil de usuário e autenticação completa — um
+            Instagram das recordações.
+          </p>
+          <div class="project-screenshots">
+            <div class="screenshots-track">
+              <img src="assets/images/memora-ss1.png" alt="Memora login" />
+              <img src="assets/images/memora-ss2.png" alt="Memora feed" />
+              <img
+                src="assets/images/memora-ss3.png"
+                alt="Memora criar memória"
+              />
+              <img src="assets/images/memora-ss4.png" alt="Memora perfil" />
+            </div>
+            <button class="screenshot-nav prev">&#8249;</button>
+            <button class="screenshot-nav next">&#8250;</button>
+            <div class="screenshot-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="tech-badges">
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">Auth</span>
+            </div>
+            <a
+              href="https://github.com/miguelkanuto/Memora-Project"
+              target="_blank"
+              class="project-link"
+            >
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- ── LIGHTFRAME ── -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div
+              class="project-logo"
+              style="
+                background: #c0392b;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.6rem;
+                border-radius: 14px;
+              "
+            >
+              📷
+            </div>
+            <div class="project-meta">
+              <p class="project-name">Lightframe</p>
+              <p class="project-category">E-commerce · Câmeras & Acessórios</p>
+            </div>
+            <div class="project-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-label">Projeto</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Loja virtual especializada em câmeras e acessórios fotográficos.
+            Conta com catálogo de produtos, carrinho de compras, autenticação de
+            usuários, filtros por categoria e preço, e página de contato.
+          </p>
+          <div class="project-screenshots">
+            <div class="screenshots-track">
+              <img
+                src="assets/images/lightframe-ss1.png"
+                alt="Lightframe homepage"
+              />
+              <img
+                src="assets/images/lightframe-ss2.png"
+                alt="Lightframe catálogo"
+              />
+              <img
+                src="assets/images/lightframe-ss5.png"
+                alt="Lightframe sobre"
+              />
+              <img
+                src="assets/images/lightframe-ss4.png"
+                alt="Lightframe login"
+              />
+              <img
+                src="assets/images/lightframe-ss3.png"
+                alt="Lightframe contato"
+              />
+            </div>
+            <button class="screenshot-nav prev">&#8249;</button>
+            <button class="screenshot-nav next">&#8250;</button>
+            <div class="screenshot-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <div class="tech-badges">
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">E-commerce</span>
+            </div>
+            <a
+              href="https://github.com/miguelkanuto/Ligthframe"
+              target="_blank"
+              class="project-link"
+            >
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ══════════════════════════════════════════
+       CERTIFICATIONS
+  ══════════════════════════════════════════ -->
+    <section id="certifications">
+      <p class="section-label reveal">Aprendizado Contínuo</p>
+      <h2 class="section-title reveal">
+        Certificações &amp; <span>Conquistas</span>
+      </h2>
+
+      <div class="certs-wrapper">
+        <div class="cert-card reveal">
+          <div class="cert-image">
+            <img
+              src="assets/images/cert-n8n.jpeg"
+              alt="Certificado Imersão Agentes de IA N8N"
+            />
+          </div>
+          <div class="cert-info">
+            <span class="cert-hours">8h</span>
+            <p class="cert-name">Imersão Agentes de IA N8N</p>
+            <p class="cert-issuer">Hashtag Treinamentos</p>
+            <p class="cert-date">05 de Fevereiro de 2026</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image">
+            <img
+              src="assets/images/cert-fullstack.png"
+              alt="Certificado Jornada Full Stack"
+            />
+          </div>
+          <div class="cert-info">
+            <span class="cert-hours">8h</span>
+            <p class="cert-name">Jornada Full Stack</p>
+            <p class="cert-issuer">Hashtag Treinamentos</p>
+            <p class="cert-date">08 de Maio de 2025</p>
+          </div>
+        </div>
+
+        <!-- Template para novos certificados:
+        <div class="cert-card reveal">
+          <div class="cert-image">
+            <img src="assets/images/cert-NOME.png" alt="Nome do Certificado" />
+          </div>
+          <div class="cert-info">
+            <span class="cert-hours">Xh</span>
+            <p class="cert-name">Nome do Certificado</p>
+            <p class="cert-issuer">Emissor</p>
+            <p class="cert-date">Data</p>
+          </div>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ══════════════════════════════════════════
+       3D MODELS (PREVIEW + MODAL)
+  ══════════════════════════════════════════ -->
+    <section id="models">
+      <p class="section-label reveal">Sketchfab</p>
+      <h2 class="section-title reveal">Modelos <span>3D</span></h2>
+
+      <div class="models-preview reveal">
+        <div class="models-header">
+          <p class="models-title">✦ Modelagem 3D com Blender</p>
+          <button id="open-models-btn" class="btn-primary">
+            Ver Galeria Completa ↗
+          </button>
+        </div>
+
+        <div class="sketchfab-embed-wrapper">
+          <iframe
+            class="sketchfab-preview"
+            title="Elise Takt Op."
+            frameborder="0"
+            allowfullscreen
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+            src="https://sketchfab.com/models/ed6650e0354343a8ae2376c5e2029bd4/embed?dnt=1"
+          ></iframe>
+        </div>
+
+        <div class="models-footer">
+          <p class="models-note">
+            Modelos criados no Blender · Hospedados no Sketchfab
+          </p>
+          <a
+            href="https://sketchfab.com/Miguel-OK"
+            target="_blank"
+            class="btn-secondary"
+          >
+            Ver no Sketchfab ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL — Galeria de Modelos 3D -->
+    <div id="models-modal" class="modal-overlay">
+      <div class="modal-header">
+        <p class="modal-title">✦ Galeria de Modelos 3D</p>
+        <button class="modal-close" aria-label="Fechar">✕</button>
+      </div>
+      <div class="modal-content">
+        <div class="modal-viewer">
+          <iframe
+            title="Galeria Sketchfab — Miguel Oliveira"
+            allowfullscreen
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+            src="https://sketchfab.com/Miguel-OK/models/embeds"
+          ></iframe>
+        </div>
+        <div class="modal-sidebar">
+          <div class="model-info">
+            <h3>Sobre os Modelos</h3>
+            <p>
+              Modelos 3D criados no Blender, explorando personagens, anatomia e
+              design de objetos. Cada projeto representa horas de aprendizado e
+              prática.
+            </p>
+          </div>
+          <div class="model-tags">
+            <span class="tag">Blender</span>
+            <span class="tag">Modelagem 3D</span>
+            <span class="tag">Character Design</span>
+            <span class="tag">Anime Style</span>
+          </div>
+          <a
+            href="https://sketchfab.com/Miguel-OK"
+            target="_blank"
+            class="btn-primary"
+            style="text-align: center"
+          >
+            Ver Perfil Completo ↗
+          </a>
+          <p
+            style="
+              font-size: 0.72rem;
+              color: var(--white-dim);
+              margin-top: 1rem;
+            "
+          >
+            Dica: use o mouse para rotacionar os modelos no visualizador 3D
+            interativo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ══════════════════════════════════════════
+       PUBLICATIONS
+  ══════════════════════════════════════════ -->
+    <section id="publications">
+      <p class="section-label reveal">LinkedIn & Comunidade</p>
+      <h2 class="section-title reveal">Publicações &amp; <span>Posts</span></h2>
+
+      <div class="publications-grid">
+        <div class="pub-card reveal">
+          <div class="pub-number">01</div>
+          <div class="pub-content">
+            <p class="pub-title">Mergulhando em n8n e Agentes de IA</p>
+            <p class="pub-desc">
+              Decidi me aventurar em uma nova área: n8n e agentes de
+              Inteligência Artificial. Essa jornada de aprendizado tem sido
+              extremamente enriquecedora — finalizei a imersão de 8h da Hashtag
+              Treinamentos e já consigo ver o potencial dessas ferramentas.
+            </p>
+            <div class="pub-meta">
+              <span class="pub-tag">IA</span>
+              <span class="pub-tag">n8n</span>
+              <span class="pub-tag">Automação</span>
+              <span class="pub-tag">Fev 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-card reveal">
+          <div class="pub-number">02</div>
+          <div class="pub-content">
+            <p class="pub-title">Voltando à Modelagem 3D nas Férias</p>
+            <p class="pub-desc">
+              Depois de um tempo afastado da modelagem 3D, resolvi aproveitar as
+              férias para voltar a explorar essa área que sempre me despertou
+              interesse. Resultado: um personagem anime estilizado no Blender.
+            </p>
+            <div class="pub-meta">
+              <span class="pub-tag">Blender</span>
+              <span class="pub-tag">3D</span>
+              <span class="pub-tag">Character Design</span>
+              <span class="pub-tag">Jan 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ESPAÇO PARA NOVAS PUBLICAÇÕES:
+        <div class="pub-card">
+          <div class="pub-number">03</div>
+          <div class="pub-content">
+            <p class="pub-title">Título da publicação</p>
+            <p class="pub-desc">Descrição...</p>
+            <div class="pub-meta">
+              <span class="pub-tag">Tag</span>
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ══════════════════════════════════════════
+       LINKS & CONTACT
+  ══════════════════════════════════════════ -->
+    <section id="contact">
+      <p class="section-label reveal">Vamos conversar</p>
+      <h2 class="section-title reveal">Links &amp; <span>Contato</span></h2>
+
+      <div class="links-grid">
+        <a
+          href="https://github.com/miguelkanuto"
+          target="_blank"
+          class="link-card reveal"
+        >
+          <span class="link-icon">⌥</span>
+          <p class="link-name">GitHub</p>
+          <p class="link-handle">miguelkanuto</p>
+        </a>
+        <a
+          href="https://sketchfab.com/Miguel-OK"
+          target="_blank"
+          class="link-card reveal"
+        >
+          <span class="link-icon">◈</span>
+          <p class="link-name">Sketchfab</p>
+          <p class="link-handle">Miguel-OK</p>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/miguel-oliveira-961830352"
+          target="_blank"
+          class="link-card reveal"
+        >
+          <span class="link-icon">◉</span>
+          <p class="link-name">LinkedIn</p>
+          <p class="link-handle">Miguel Oliveira</p>
+        </a>
+        <a href="mailto:miguelkanuto20@gmail.com" class="link-card reveal">
+          <span class="link-icon">✉</span>
+          <p class="link-name">E-mail</p>
+          <p class="link-handle">miguelkanuto20@gmail.com</p>
+        </a>
+      </div>
+
+      <div class="contact-email reveal">
+        <p>Quer bater um papo, propor um projeto ou só dizer oi?</p>
+        <a href="mailto:miguelkanuto20@gmail.com" class="email-link">
+          miguelkanuto20@gmail.com
+        </a>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+    <footer>
+      <p>
+        Feito com <span>♥</span> por
+        <span>Miguel Oliveira Kanuto Menezes</span> ·
+        <span id="footer-year"></span>
+      </p>
+      <p style="margin-top: 0.5rem; font-size: 0.65rem; opacity: 0.5">
+        Campina Grande, PB · Sistemas de Informação · Unifacisa
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+      document.getElementById("footer-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
