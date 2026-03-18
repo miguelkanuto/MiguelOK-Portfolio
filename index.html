@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- ══════════════════════════════════════════
-       NAVIGATION
-  ══════════════════════════════════════════ -->
     <nav>
       <a href="#hero" class="nav-logo">OK<span>.dev</span></a>
       <ul class="nav-links">
@@ -23,17 +20,29 @@
         <li><a href="#projects">Projetos</a></li>
         <li><a href="#certifications">Certificações</a></li>
         <li><a href="#models">Modelos 3D</a></li>
-        <li><a href="#publications">Publicações</a></li>
         <li><a href="#contact">Contato</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div style="display: flex; align-items: center; gap: 1rem">
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Alternar tema"
+          title="Modo claro / escuro"
+        >
+          <span class="toggle-thumb"></span>
+          <span class="toggle-icon-dark">
+            <img src="assets/images/extra/sun.png" alt="Ligth" />
+          </span>
+          <span class="toggle-icon-light"
+            ><img src="assets/images/extra/moon.png" alt="Dark"
+          /></span>
+        </button>
+        <button class="nav-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
 
-    <!-- ══════════════════════════════════════════
-       HERO
-  ══════════════════════════════════════════ -->
     <div id="hero" style="position: relative; overflow: hidden">
       <div class="hero-orb"></div>
       <div class="hero-inner">
@@ -60,9 +69,6 @@
 
     <div class="divider"></div>
 
-    <!-- ══════════════════════════════════════════
-       ABOUT
-  ══════════════════════════════════════════ -->
     <section id="about">
       <p class="section-label reveal">Quem sou eu</p>
       <h2 class="section-title reveal">Sobre <span>Mim</span></h2>
@@ -116,9 +122,6 @@
 
     <div class="divider"></div>
 
-    <!-- ══════════════════════════════════════════
-       SKILLS — WORD CLOUD
-  ══════════════════════════════════════════ -->
     <section id="skills">
       <p class="section-label reveal">Tecnologias & Ferramentas</p>
       <h2 class="section-title reveal">Minhas <span>Competências</span></h2>
@@ -149,15 +152,11 @@
 
     <div class="divider"></div>
 
-    <!-- ══════════════════════════════════════════
-       EXPERIENCE & EDUCATION
-  ══════════════════════════════════════════ -->
     <section id="experience">
       <p class="section-label reveal">Trajetória</p>
       <h2 class="section-title reveal">
         Experiência &amp; <span>Formação</span>
       </h2>
-
       <div class="timeline reveal">
         <div class="timeline-item">
           <p class="timeline-date">Novembro 2025 — Presente · 4 meses</p>
@@ -189,7 +188,6 @@
           </ul>
         </div>
       </div>
-
       <div class="edu-card reveal">
         <div class="edu-icon">
           <img
@@ -210,15 +208,10 @@
 
     <div class="divider"></div>
 
-    <!-- ══════════════════════════════════════════
-       PROJECTS
-  ══════════════════════════════════════════ -->
     <section id="projects">
       <p class="section-label reveal">GitHub</p>
       <h2 class="section-title reveal">Meus <span>Projetos</span></h2>
-
       <div class="projects-grid">
-        <!-- ── CIVI-FIX ── -->
         <div class="project-card reveal">
           <div class="project-header">
             <div class="project-logo">
@@ -274,13 +267,11 @@
               href="https://github.com/miguelkanuto/Civi-fix-Projeto"
               target="_blank"
               class="project-link"
+              >GitHub ↗</a
             >
-              GitHub ↗
-            </a>
           </div>
         </div>
 
-        <!-- ── MEMORA ── -->
         <div class="project-card reveal">
           <div class="project-header">
             <div
@@ -344,13 +335,11 @@
               href="https://github.com/miguelkanuto/Memora-Project"
               target="_blank"
               class="project-link"
+              >GitHub ↗</a
             >
-              GitHub ↗
-            </a>
           </div>
         </div>
 
-        <!-- ── LIGHTFRAME ── -->
         <div class="project-card reveal">
           <div class="project-header">
             <div
@@ -424,9 +413,8 @@
               href="https://github.com/miguelkanuto/Ligthframe"
               target="_blank"
               class="project-link"
+              >GitHub ↗</a
             >
-              GitHub ↗
-            </a>
           </div>
         </div>
       </div>
@@ -434,15 +422,11 @@
 
     <div class="divider"></div>
 
-    <!-- ══════════════════════════════════════════
-       CERTIFICATIONS
-  ══════════════════════════════════════════ -->
     <section id="certifications">
       <p class="section-label reveal">Aprendizado Contínuo</p>
       <h2 class="section-title reveal">
         Certificações &amp; <span>Conquistas</span>
       </h2>
-
       <div class="certs-wrapper">
         <div class="cert-card reveal">
           <div class="cert-image">
@@ -474,31 +458,43 @@
           </div>
         </div>
 
-        <!-- Template para novos certificados:
-        <div class="cert-card reveal">
-          <div class="cert-image">
-            <img src="assets/images/cert-NOME.png" alt="Nome do Certificado" />
+        <div class="cert-card reveal" style="position: relative">
+          <span class="badge-new">Novo</span>
+          <div class="cert-image-slider">
+            <div class="cert-slides-track">
+              <img
+                src="assets/images/cert-sensoriamento.png"
+                alt="Certificado Sensoriamento Inteligente — página 1"
+              />
+              <img
+                src="assets/images/cert-sensoriamento-2.png"
+                alt="Certificado Sensoriamento Inteligente — página 2"
+              />
+            </div>
+            <button class="cert-nav prev" aria-label="Anterior">&#8249;</button>
+            <button class="cert-nav next" aria-label="Próximo">&#8250;</button>
+            <div class="cert-dots">
+              <span class="cert-dot active"></span>
+              <span class="cert-dot"></span>
+            </div>
           </div>
           <div class="cert-info">
-            <span class="cert-hours">Xh</span>
-            <p class="cert-name">Nome do Certificado</p>
-            <p class="cert-issuer">Emissor</p>
-            <p class="cert-date">Data</p>
+            <p class="cert-name">
+              Fundamentos das Plataformas de Sensoriamento Inteligente para
+              Indústria
+            </p>
+            <p class="cert-issuer">VIRTUS CC · UFCG</p>
+            <p class="cert-date">Março de 2026</p>
           </div>
         </div>
-        -->
       </div>
     </section>
 
     <div class="divider"></div>
 
-    <!-- ══════════════════════════════════════════
-       3D MODELS (PREVIEW + MODAL)
-  ══════════════════════════════════════════ -->
     <section id="models">
       <p class="section-label reveal">Sketchfab</p>
       <h2 class="section-title reveal">Modelos <span>3D</span></h2>
-
       <div class="models-preview reveal">
         <div class="models-header">
           <p class="models-title">✦ Modelagem 3D com Blender</p>
@@ -506,7 +502,6 @@
             Ver Galeria Completa ↗
           </button>
         </div>
-
         <div class="sketchfab-embed-wrapper">
           <iframe
             class="sketchfab-preview"
@@ -519,7 +514,6 @@
             src="https://sketchfab.com/models/ed6650e0354343a8ae2376c5e2029bd4/embed?dnt=1"
           ></iframe>
         </div>
-
         <div class="models-footer">
           <p class="models-note">
             Modelos criados no Blender · Hospedados no Sketchfab
@@ -535,7 +529,6 @@
       </div>
     </section>
 
-    <!-- MODAL — Galeria de Modelos 3D -->
     <div id="models-modal" class="modal-overlay">
       <div class="modal-header">
         <p class="modal-title">✦ Galeria de Modelos 3D</p>
@@ -591,75 +584,9 @@
 
     <div class="divider"></div>
 
-    <!-- ══════════════════════════════════════════
-       PUBLICATIONS
-  ══════════════════════════════════════════ -->
-    <section id="publications">
-      <p class="section-label reveal">LinkedIn & Comunidade</p>
-      <h2 class="section-title reveal">Publicações &amp; <span>Posts</span></h2>
-
-      <div class="publications-grid">
-        <div class="pub-card reveal">
-          <div class="pub-number">01</div>
-          <div class="pub-content">
-            <p class="pub-title">Mergulhando em n8n e Agentes de IA</p>
-            <p class="pub-desc">
-              Decidi me aventurar em uma nova área: n8n e agentes de
-              Inteligência Artificial. Essa jornada de aprendizado tem sido
-              extremamente enriquecedora — finalizei a imersão de 8h da Hashtag
-              Treinamentos e já consigo ver o potencial dessas ferramentas.
-            </p>
-            <div class="pub-meta">
-              <span class="pub-tag">IA</span>
-              <span class="pub-tag">n8n</span>
-              <span class="pub-tag">Automação</span>
-              <span class="pub-tag">Fev 2026</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="pub-card reveal">
-          <div class="pub-number">02</div>
-          <div class="pub-content">
-            <p class="pub-title">Voltando à Modelagem 3D nas Férias</p>
-            <p class="pub-desc">
-              Depois de um tempo afastado da modelagem 3D, resolvi aproveitar as
-              férias para voltar a explorar essa área que sempre me despertou
-              interesse. Resultado: um personagem anime estilizado no Blender.
-            </p>
-            <div class="pub-meta">
-              <span class="pub-tag">Blender</span>
-              <span class="pub-tag">3D</span>
-              <span class="pub-tag">Character Design</span>
-              <span class="pub-tag">Jan 2026</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- ESPAÇO PARA NOVAS PUBLICAÇÕES:
-        <div class="pub-card">
-          <div class="pub-number">03</div>
-          <div class="pub-content">
-            <p class="pub-title">Título da publicação</p>
-            <p class="pub-desc">Descrição...</p>
-            <div class="pub-meta">
-              <span class="pub-tag">Tag</span>
-            </div>
-          </div>
-        </div>
-        -->
-      </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <!-- ══════════════════════════════════════════
-       LINKS & CONTACT
-  ══════════════════════════════════════════ -->
     <section id="contact">
       <p class="section-label reveal">Vamos conversar</p>
       <h2 class="section-title reveal">Links &amp; <span>Contato</span></h2>
-
       <div class="links-grid">
         <a
           href="https://github.com/miguelkanuto"
@@ -694,7 +621,6 @@
           <p class="link-handle">miguelkanuto20@gmail.com</p>
         </a>
       </div>
-
       <div class="contact-email reveal">
         <p>Quer bater um papo, propor um projeto ou só dizer oi?</p>
         <a href="mailto:miguelkanuto20@gmail.com" class="email-link">
@@ -703,9 +629,6 @@
       </div>
     </section>
 
-    <!-- ══════════════════════════════════════════
-       FOOTER
-  ══════════════════════════════════════════ -->
     <footer>
       <p>
         Feito com <span>♥</span> por
@@ -716,6 +639,19 @@
         Campina Grande, PB · Sistemas de Informação · Unifacisa
       </p>
     </footer>
+
+    <div class="update-banner" id="update-banner">
+      <div class="update-banner-header">
+        <span class="update-banner-title">✦ Novidades</span>
+        <button class="update-banner-close" id="close-banner">✕</button>
+      </div>
+      <ul class="update-list">
+        <li data-target="#certifications">
+          Certificado: Sensoriamento Inteligente (VIRTUS/UFCG)
+        </li>
+      </ul>
+      <p class="update-date">Atualizado em Março de 2026</p>
+    </div>
 
     <script src="js/main.js"></script>
     <script>
